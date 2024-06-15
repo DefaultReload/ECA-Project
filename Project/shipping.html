@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        /* Embedded CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('handheld2.png'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 500px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fff; /* Solid white background */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            margin-bottom: 15px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .checkbox-container input {
+            margin-right: 10px;
+        }
+        button.submit {
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>FiberBolt-Tech Registration</h1>
+        <form id="checkoutForm" method="post" action="connect.php">
+            <label for="first-name">First Name <span style="color: red;">*</span></label>
+            <input type="text" id="first-name" name="first-name" required>
+            
+            <label for="last-name">Last Name <span style="color: red;">*</span></label>
+            <input type="text" id="last-name" name="last-name" required>
+            
+            <label for="phone-number">Phone Number <span style="color: red;">*</span></label>
+            <input type="tel" id="phone-number" name="phone-number" required>
+            
+            <label for="e-mail">Email <span style="color: red;">*</span></label>
+            <input type="email" id="e-mail" name="email" required>
+            
+            <label for="pass-word">Password <span style="color: red;">*</span></label>
+            <input type="password" id="pass-word" name="password" required>
+            
+            <label for="street-address">Street Address <span style="color: red;">*</span></label>
+            <input type="text" id="street-address" name="street-address" required>
+            
+            <label for="postal-code">Postal Code <span style="color: red;">*</span></label>
+            <input type="text" id="postal-code" name="postal-code" required>
+            
+            <label for="city">Town/City <span style="color: red;">*</span></label>
+            <input type="text" id="city" name="city" required>
+            
+            <label for="province">Province <span style="color: red;">*</span></label>
+            <select id="province" name="province" required>
+                <option value="" disabled selected>Please Select</option>
+                <option value="Limpopo">Limpopo</option>
+                <option value="Eastern Cape">Eastern Cape</option>
+                <option value="Free State">Free State</option>
+                <option value="Gauteng">Gauteng</option>
+                <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                <option value="Mpumalanga">Mpumalanga</option>
+                <option value="Northern Cape">Northern Cape</option>
+                <option value="North West">North West</option>
+                <option value="Western Cape">Western Cape</option>
+            </select>
+            
+          <button type="submit" class="submit">Register</button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('checkoutForm');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+    
+                const firstName = document.getElementById('first-name').value;
+                const lastName = document.getElementById('last-name').value;
+                const phoneNumber = document.getElementById('phone-number').value;
+                const email = document.getElementById('e-mail').value;
+                const streetAddress = document.getElementById('street-address').value;
+                const postalCode = document.getElementById('postal-code').value;
+                const city = document.getElementById('city').value;
+                const province = document.getElementById('province').value;
+    
+                sessionStorage.setItem('firstName', firstName);
+                sessionStorage.setItem('lastName', lastName);
+                sessionStorage.setItem('phoneNumber', phoneNumber);
+                sessionStorage.setItem('email', email);
+                sessionStorage.setItem('streetAddress', streetAddress);
+                sessionStorage.setItem('postalCode', postalCode);
+                sessionStorage.setItem('city', city);
+                sessionStorage.setItem('province', province);
+    
+              
+                window.location.href = 'TestOnline.php';
+            });
+        });
+    </script>
+</body>
+</html>

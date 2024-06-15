@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-right {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-right form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-right input {
+    padding: 5px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.footer-right button {
+    padding: 5px 10px;
+    background: orange;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-media img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .testimonial {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right form {
+        flex-direction: column;
+    }
+
+    .footer-right input {
+        margin: 0 0 10px 0;
+    }
+    .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-logo {
+            width: 10%;
+            max-width: 100px;
+           
+            margin-bottom: 20px;
+        }
+
+        .footer p {
+            margin: 10px 0;
+        }
+
+     
+        @media (max-width: 768px) {
+            .footer-logo {
+                width: 15%;
+                max-width: 80px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-logo {
+                width: 20%;
+                max-width: 60px;
+            }
+        }
+}
+
+    </style>
+
+<head>
+    <meta charset="utf-8">
+    <title>Drone Details</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+ <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li class="cart"><a href="#cart">🛒</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-fluid bg-secondary mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
+            <h1 class="font-weight-semi-bold text-uppercase mb-3">Drone Details</h1>
+            <div class="d-inline-flex">
+                <p class="m-0">Press button to go back home</p>
+                <p class="m-0 px-2">-</p>
+                <p class="m-0"><a href="shop.html">Home</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="row px-xl-5">
+            <div class="col-lg-5 pb-5">
+                <div id="product-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner border">
+                        <div class="carousel-item active">
+                            <img class="w-100 h-100" src="images/drone1.png" alt="Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="w-100 h-100" src="images/drone2.png" alt="Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="w-100 h-100" src="images/drone3.png" alt="Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="w-100 h-100" src="images/drone4.png" alt="Image">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
+                        <i class="fa fa-2x fa-angle-left text-dark"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#product-carousel" data-slide="next">
+                        <i class="fa fa-2x fa-angle-right text-dark"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-7 pb-5">
+                <h3 class="font-weight-semi-bold">Drone DJI Mini 2 SE</h3>
+                <div class="d-flex mb-3">
+                    <div class="text-primary mr-2">
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star-half-alt"></small>
+                        <small class="far fa-star"></small>
+                    </div>
+                    <small class="pt-1">(50 Reviews)</small>
+                </div>
+                <h3 class="font-weight-semi-bold mb-4">R8499.00</h3>
+                <p class="mb-4"></p>
+               
+               
+    
+                <div class="d-flex pt-2">
+                    <p class="text-dark font-weight-medium mb-0 mr-2">Share on:</p>
+                    <div class="d-inline-flex">
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row px-xl-5">
+            <div class="col">
+                <div class="nav nav-tabs justify-content-center border-secondary mb-4">
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-1">Description</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-2">Information</a>
+    
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="tab-pane-1">
+                        <h4 class="mb-3">Product Description</h4>
+                        <p></p>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-2">
+                        <h4 class="mb-3">Additional Information</h4>
+                        <p></p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0">
+                                        
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                       
+                                    </li>
+                                  </ul> 
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0">
+                                       
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                       
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                       
+                                    </li>
+                                  </ul> 
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shop Detail End -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="logo.png" alt="FiberBolt-Tech Logo" class="footer-logo">
+                <p>Help</p>
+                <p>Careers</p>
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+                <p>Do Not Sell My Information</p>
+            </div>
+            <div class="footer-right">
+                <br>
+                <form>
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Submit</button>
+                </form>
+                <br>
+                <div class="social-media">
+                    <a href="#"><img src="x.png" alt="X"></a>
+                    <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="instagram.jpg" alt="Instagram"></a>
+                    <a href="#"><img src="facebook.jpg" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 FiberBolt-Tech. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Products Start -->
+    <div class="container-fluid py-5">
+        <div class="text-center mb-4">
+         </div>
+        
+    </div>
+    <!-- Products End -->
+
+
+    <!-- Footer Start -->
+   
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
