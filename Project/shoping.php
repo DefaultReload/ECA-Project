@@ -341,7 +341,6 @@ $result = $conn->query($sql);
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a href="shop.html">Shop</a></li>
             </ul>
         </nav>
